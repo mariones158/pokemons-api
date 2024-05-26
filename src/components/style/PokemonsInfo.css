@@ -1,0 +1,316 @@
+.article__pokemonInfo {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0.7em;
+}
+
+.pokemon__header {
+  background-color: #999;
+  aspect-ratio: 2;
+  position: relative;
+}
+
+.img__pokemon {
+  position: absolute;
+  width: 150px;
+  height: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3em;
+}
+
+.Section__name--pokemon {
+  padding: 3em 1.5em 1em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  margin-bottom: 0.2em;
+}
+
+.list__type--pokemon {
+  display: flex;
+  gap: 0.4em;
+  text-transform: capitalize;
+}
+
+.separator {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.145);
+}
+
+.pokemon__stats--ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 1.5em 1em;
+}
+
+.li-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.li-2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2; /
+}
+
+.li-3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.li-4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.pokemon__stats--li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.stats--name{
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.stats--base{
+  font-size: 1.1em;
+}
+
+.grass-gradient{
+  background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%) ;
+}
+
+.grass-name,
+.grass__stats--base{
+  color: #206e62;
+}
+
+.grass__card{
+  border: 0.5em solid#72c5c3
+}
+
+.fire-gradient{
+  background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+}
+
+.fire-name,
+.fire__stats--base{
+  color: #E35825;
+}
+
+.fire__card{
+  border: 0.5em solid#de683d
+}
+
+.water-gradient{
+  background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+
+}
+
+.water-name,
+.water__stats--base{
+  color: #1479FB;
+}
+
+.water__card{
+  border: 0.5em solid #5d90d4
+}
+
+.bug-gradient{
+  background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+
+}
+
+.bug-name,
+.bug__stats--base{
+  color: #3BB039;
+}
+
+.bug__card{
+  border: 0.5em solid #62DB60
+}
+
+.normal-gradient{
+  background: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+
+}
+
+.normal-name,
+.normal__stats--base{
+  color: #BC6B7C;
+}
+
+.normal__card{
+  border: 0.5em solid #7C3F4C
+}
+
+.poison-gradient{
+  background: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
+
+}
+
+.poison-name,
+.poison__stats--base{
+  color: #A564E3;
+}
+
+.poison__card{
+  border: 0.5em solid #CE9BFF
+}
+
+.fighting-gradient{
+  background: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+}
+
+.fighting-name,
+.fighting__stats--base{
+  color: #F1613C;
+}
+
+.fighting__card{
+  border: 0.5em solid #CB735D
+}
+
+
+.ground-gradient{
+  background: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+}
+
+.ground-name,
+.ground__stats--base{
+  color: #895C1A;
+}
+
+.ground__card{
+  border: 0.5em solid #D69638
+}
+
+.rock-gradient{
+  background: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+}
+
+.rock-name,
+.rock__stats--base{
+  color: #8D8D94;
+}
+
+.rock__card{
+  border: 0.5em solid #D3D3D3
+}
+
+.dark-gradient{
+  background: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+}
+
+.dark-name,
+.dark__stats--base{
+  color: #0D1211;
+}
+
+.dark__card{
+  border: 0.5em solid #5A5E5D
+}
+
+
+.ghost-gradient{
+  background: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+}
+
+.ghost-name,
+.ghost__stats--base{
+  color: #454AA8;
+}
+
+.ghost__card{
+  border: 0.5em solid #787DDA
+}
+
+.fairy-gradient{
+  background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+}
+
+.fairy-name,
+.fairy__stats--base{
+  color: #C23867;
+}
+
+.fairy__card{
+  border: 0.5em solid #CD7D98
+}
+
+
+.electric-gradient{
+  background: linear-gradient(179.75deg, #eae707 -19.96%, #b0ae38 43.67%, #cdcb51 138.4%);
+}
+
+.electric-name,
+.electric__stats--base{
+  color: #b0ae38;
+}
+
+.electric__card{
+  border: 0.5em solid #cdcb51
+}
+
+
+.psychic-gradient{
+  background: linear-gradient(179.75deg, #c10d31 -19.96%, #4f52bc 43.67%, rgb(40, 40, 39) 138.4%);
+}
+
+.psychic-name,
+.psychic__stats--base{
+  color: #440d18;
+}
+
+.psychic__card{
+  border: 0.5em solid #404372
+}
+
+.steel-gradient{
+  background: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+}
+
+.steel-name,
+.steel__stats--base{
+  color: #728881;
+}
+
+.steel__card{
+  border: 0.5em solid #A8A8A8
+}
+
+
+.ice-gradient{
+  background: linear-gradient(179.75deg, #ecefee -19.96%, #91b8ab 43.67%, #748982 138.4%);
+}
+
+.ice-name,
+.ice__stats--base{
+  color: #91b8ab;
+}
+
+.ice__card{
+  border: 0.5em solid #91b8ab
+}
+
+
+.dragon-gradient{
+  background: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+}
+
+.dragon-name,
+.dragon__stats--base{
+  color: #56A4AE;
+}
+
+.dragon__card{
+  border: 0.5em solid #A2BEC1;
+}
+

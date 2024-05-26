@@ -1,0 +1,138 @@
+
+.homepage {
+  width: 100%;
+  height: 100vh;
+}
+
+.homepage__header {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__logo {
+  width: 50%;
+}
+
+.home__title {
+  color: rgb(232, 89, 89);
+  font-size: 2.5em;
+  margin-top: 1em;
+}
+
+.homepage__p {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 1em 0 1.5em 0;
+}
+
+
+
+
+.home__form {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  box-shadow: 1px 5px 10px rgba(47, 47, 47, 0.404);
+}
+
+.home__form > * {
+  flex-grow: 1; 
+}
+
+
+.input__form--home {
+  width: 40%;
+  height: 50px;
+  text-align:start;
+  padding: 0 0.9em;
+  font-size: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.304);
+}
+
+.btn__form--home {
+  padding: 0.3em 1em;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  background-color: rgb(236, 75, 75);
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  font-size:x-large;
+  text-transform: uppercase;
+  width: 1.5em;
+
+}
+
+.input__form--home::placeholder {
+  color: rgba(128, 128, 128, 0.543);
+}
+
+
+
+
+.footer {
+  width: 100%;
+  height: 15vh;
+}
+
+.section_red {
+  width: 100%;
+  height: 9vh;
+  background-color: rgb(238, 45, 45);
+}
+
+.section_black {
+  width: 100%;
+  min-height: 6vh;
+  background-color: rgb(25, 25, 25);
+}
+
+.circle {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: 6px solid black;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle__center {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  border: 6px solid black;
+  background-color: rgb(55, 55, 55);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 550px) {
+  .home__logo {
+    width: 80%;
+  }
+
+  .home__title {
+    font-size: 2em;
+  }
+  .homepage__p {
+    font-size: 0.8em;
+  }
+
+  .input__form--home {
+    width: 200px;
+    height: 25px;
+  }
+  .btn__form--home {
+    padding: 1px 10px;
+  }
+}
